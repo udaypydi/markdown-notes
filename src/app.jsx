@@ -21,7 +21,7 @@ export default function App() {
             src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Evernote-512.png" 
             alt="Evernote" 
           />
-          <p className="text-white text-2xl">Evernote</p>
+          <p className="text-white text-2xl m-2">Evernote</p>
         </div>
         
         <Button buttonText="Get Started"/>
