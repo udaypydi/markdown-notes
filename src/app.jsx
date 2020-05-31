@@ -17,7 +17,7 @@ export default function App() {
         />
         <div className="m-4 bg-green-500 flex items-center cursor-pointer" style={{ width: 250 }}> 
           <img 
-            width="60"
+            width="50"
             src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Evernote-512.png" 
             alt="Evernote" 
           />
