@@ -5,6 +5,11 @@ import Header from 'components/header/header.component';
 import NewNotes from 'components/newnotes/newnotes.component';
 import Sidebar from 'components/sidebar/sidebar.component';
 
+const styles = {
+    container: `
+        absolute mt-24 ml-4
+    `
+}
 function DefaultLayout({config, component }) {
     return (
         <Route
@@ -20,8 +25,15 @@ function DefaultLayout({config, component }) {
                 {
                     config.sidebar && <Sidebar />
                 }
-            
-                {React.createElement(component, [props])}
+
+                <div 
+                    className={styles.container} 
+                    style={{ 
+                        marginLeft: config.sidebar ? '21%' : 0 
+                    }}
+                >
+                    {React.createElement(component, [props])}
+                </div>
                 </div>
             )}
         />
