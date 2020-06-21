@@ -1,7 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import App from '../app';
+import Header from 'components/header/header.component';
 import NewNotes from 'components/newnotes/newnotes.component';
+import Sidebar from 'components/sidebar/sidebar.component';
 
 function DefaultLayout({config, component }) {
     return (
@@ -9,14 +11,18 @@ function DefaultLayout({config, component }) {
             exact
             path={config.path}
             render={(props) => (
-                <>
+                <div className="bg-gray-800 h-screen">
                 {
                     config.header && (
-                        <h1>Header</h1>
+                        <Header />
                     )
                 }
+                {
+                    config.sidebar && <Sidebar />
+                }
+            
                 {React.createElement(component, [props])}
-                </>
+                </div>
             )}
         />
     )
@@ -29,7 +35,8 @@ function AppRouter() {
                 <DefaultLayout 
                     config={{ 
                         path: '/new-notes', 
-                        header: true 
+                        header: true,
+                        sidebar: true,
                     }} 
                     component={NewNotes} 
                 />
