@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
+import { withRouter } from 'react-router-dom';
 import Button from 'uielements/button/button.component';
-import Editor from 'for-editor'
 import 'assets/css/main.css';
 import './app.scss';
 
-export default function App() {
-  const [value, setValue] = useState('');
+function App(props) {
+
+  function createNewNotes() {
+    const { history } = props;
+    history.push('/new-notes');
+  }
   return (
     <div className="h-screen w-screen bg-gray-800 flex flex-1 flex-col justify-center items-center">
         <p className="text-5xl text-gray-200">Welcome To Notes.md!</p>
-        <Editor 
-          value={value}
-          onChange={val => setValue(val)}
-          placeholder="Add Notes"
-          language="en"
+        <Button 
+          className="mt-2" 
+          buttonText="Get Started"
+          onClick={createNewNotes}
         />
-        <Button className="mt-2" buttonText="Get Started"/>
     </div>
   );
 }
+
+export default withRouter(App);
