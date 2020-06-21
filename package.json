@@ -30,6 +30,7 @@
     "@babel/preset-react": "^7.9.4",
     "autoprefixer": "^9.7.6",
     "babel-loader": "^8.1.0",
+    "draft-js": "^0.11.6",
     "for-editor": "^0.3.5",
     "postcss-cli": "^7.1.0",
     "prop-types": "^15.7.2",
