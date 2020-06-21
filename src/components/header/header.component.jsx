@@ -7,7 +7,7 @@ const styles = {
         justify-center items-center 
         p-5 bg-gray-800 text-gray-100
         border-b-2 border-gray-300
-        fixed w-screen
+        fixed w-screen z-40
     `,
 
     text: `text-4xl`
