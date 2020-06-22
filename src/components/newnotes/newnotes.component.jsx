@@ -6,8 +6,13 @@ function NewNotes() {
     const [editorState, setEditorState] = useState(EditorState.createEmpty());
 
     return (
-        <div>
-            <p>Add Notes</p>
+        <div
+            style={{ 
+                border: '1px solid #cccccc',
+                height: 500,
+                width: 1000,
+            }}
+        >
              <Editor 
                 editorState={editorState} 
                 onChange={setEditorState}
