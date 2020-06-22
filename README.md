@@ -4,6 +4,6 @@
     </a>
     <h2 align="left">Features</h3>
     <ol>
-        <li align="left">Markdown Support</li>
+        <li align="left">Draft JS Editor For Beautiful Notes</li>
     </ol>
 </div>
