@@ -4,6 +4,7 @@
     </a>
     <h2 align="left">Features</h3>
     <ol>
+        <li align="left">Inline text editing</li>
         <li align="left">Draft JS Editor For Inline Editing of Notes</li>
          <li align="left">MarkDown Support</li>
     </ol>
